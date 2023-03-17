@@ -1,0 +1,113 @@
+.back-btn{
+  display: flex;
+  margin: 2rem 1.5rem 4rem;
+  padding: .5rem 1.5rem;
+  box-shadow: var(--primary-box);
+  border-radius: 5px;
+  width: fit-content;
+  align-items: center;
+  background: var(--element-color);
+}
+
+#back-arrow,
+button{
+  color: var(--text);
+}
+
+#back-arrow{
+  padding-right: .5rem;
+}
+
+.back-btn button{
+  margin: 0;
+}
+
+.details-body{
+  margin: 1.5rem;
+  color: var(--text);
+}
+
+.country-flag{
+  padding-bottom: 2.5rem;
+}
+
+.details-body h2{
+  padding-bottom: 1rem;
+}
+
+.sub-details{
+  padding-top: 2rem;
+}
+
+.details-body span{
+  padding-left: .5rem;
+}
+
+#border-countries-title{
+  padding-top: 2rem;
+}
+
+.border-btn-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}
+
+@media screen and (min-width: 1200px){
+  .back-btn{
+    margin: 5rem 0;
+    width: 100px;
+  }
+
+  .back-btn:hover, 
+  button:hover{
+    cursor: pointer;
+  }
+  
+  #back-arrow{
+    padding-left: 1rem;
+  }
+  
+  .details-body{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto;
+    margin: 0;
+    font-size: 1.125rem;
+  }
+
+  .country-flag{
+    grid-row: 1 / span 4;
+    padding-right: 6rem;
+    width: 600px;
+    height: 400px;
+  }
+
+  .main-details{
+    grid-column: 2;
+  }
+
+  .details-body h2{
+    font-size: 1.7rem;
+  }
+
+  .sub-details{
+    grid-column: 3;
+    padding-top: 3.2rem;
+  }
+
+  .border-country-btn{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: span 2;
+    grid-row: 3;
+  }
+  .border-country-btn h3{
+    padding-right: 2rem;
+  }
+  
+  .border-btn-grid{
+    align-self: flex-end;
+  }
+
+}

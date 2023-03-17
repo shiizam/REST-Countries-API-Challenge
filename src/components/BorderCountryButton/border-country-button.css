@@ -1,0 +1,16 @@
+.border-btn{
+  box-shadow: var(--primary-box);
+  padding: 3px 10px;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: var(--text);
+  background: var(--element-color);
+}
+
+@media screen and (min-width: 1200px){
+  .border-btn{
+    margin-bottom: 8px;
+  }
+}

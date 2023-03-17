@@ -1,0 +1,58 @@
+:root {
+  font-family: 'Nunito Sans';
+
+  --bg: hsl(0, 0%, 98%);
+  --element-color: hsl(0, 0%, 100%);;
+  --text: hsl(200, 15%, 8%);
+  --input-text:hsl(0, 0%, 52%);
+  --primary-box: 0px 0px 8px 0px lightgray;
+  --search-icon: url('./assets/LightModeSearchIcon.svg');
+
+}
+
+*,*::before,*::after{
+  margin: 0;
+  transition: background 150ms;
+}
+
+body {
+  background: var(--bg);
+}
+
+body[class='dark']{
+  --bg: hsl(207, 26%, 17%);
+  --element-color: hsl(209, 23%, 22%);
+  --text: hsl(0, 0%, 100%);
+  --input-text:hsl(0, 0%, 100%);
+  --primary-box: 0px 0px 8px 0px hsl(209, 23%, 22%);
+  --search-icon: url('./assets/DarkModeSearchIcon.svg');
+}
+
+main{
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h1,
+h2{
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+span{
+  font-weight: 300;
+}
+
+button,
+input{
+  color: var(--text);
+}
+
+button, 
+input, 
+select,
+option{
+  font-family: 'Nunito Sans';
+  font-size: 0.875rem;
+  font-weight: 300;
+}

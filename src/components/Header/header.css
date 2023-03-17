@@ -1,0 +1,49 @@
+.title-bar{
+  display: flex;
+  background: var(--element-color);
+  color: var(--text);
+  font-weight: 800;
+  box-shadow: var(--primary-box);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.15rem;
+}
+
+#icon{
+  padding: .25rem .25rem 0 0;
+}
+
+button{
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+#theme-btn{
+  margin-left: 4rem;
+}
+
+@media screen and (min-width: 1200px){
+
+  .title-bar{
+    justify-content: space-around;
+    padding: 2rem 0;
+  }
+
+  .title-bar h1{
+    font-size: 1.5rem;
+    padding-right: 7rem;
+  }
+
+  .title-bar h1:hover{
+    cursor: pointer;
+  }
+
+  #icon{
+    padding: .25rem .25rem 0 0;
+  }
+  
+  #theme-btn{
+    font-size: 1.25rem;
+  }
+}
