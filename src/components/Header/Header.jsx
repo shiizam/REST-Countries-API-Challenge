@@ -16,18 +16,20 @@ export const Header = () => {
   }
 
   return (
-    <div className='title-bar'>
-      <button onClick={toggleHome}><h1>Where in the world?</h1></button>
-      <button 
-        id='theme-btn' 
-        onClick={toggleTheme}
-        >
-        <FontAwesomeIcon 
-        id='icon' 
-        icon={isLight ? faSun : faMoon}
-        />
-        Dark Mode
-      </button>
+    <div className='header-bg'>
+      <div className='title-bar'>
+        <button onClick={toggleHome}><h1>Where in the world?</h1></button>
+        <button 
+          id='theme-btn' 
+          onClick={toggleTheme}
+          >
+          <FontAwesomeIcon 
+          id='icon' 
+          icon={isLight ? faSun : faMoon}
+          />
+          Dark Mode
+        </button>
+      </div>
     </div>
   )
 }

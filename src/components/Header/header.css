@@ -1,9 +1,12 @@
+.header-bg{
+  background: var(--element-color);
+  box-shadow: var(--primary-box);
+}
+
 .title-bar{
   display: flex;
-  background: var(--element-color);
   color: var(--text);
   font-weight: 800;
-  box-shadow: var(--primary-box);
   justify-content: center;
   align-items: center;
   padding: 2rem 1.15rem;
@@ -26,13 +29,15 @@ button{
 @media screen and (min-width: 1200px){
 
   .title-bar{
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem 0;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .title-bar h1{
     font-size: 1.5rem;
-    padding-right: 7rem;
+    /* padding-right: 7rem; */
   }
 
   .title-bar h1:hover{
