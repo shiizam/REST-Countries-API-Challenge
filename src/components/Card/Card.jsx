@@ -12,7 +12,7 @@ export const Card = () => {
       <Link className='link' to={`country/${item.name.common}`} key={`${item.name.common} ${index}`}>
       <div className='card' >
         <div className="card-header">
-          <img src={item.flags.png}></img>
+          <img src={`${item.flags.png}`}></img>
         </div>
         <div className="card-body">
           <h2>{item.name.common}</h2>

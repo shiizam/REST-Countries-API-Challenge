@@ -30,14 +30,11 @@ button{
 
   .title-bar{
     justify-content: space-between;
-    padding: 2rem 0;
-    max-width: 1440px;
-    margin: 0 auto;
+    padding: 2rem .5rem;
   }
 
   .title-bar h1{
     font-size: 1.5rem;
-    /* padding-right: 7rem; */
   }
 
   .title-bar h1:hover{

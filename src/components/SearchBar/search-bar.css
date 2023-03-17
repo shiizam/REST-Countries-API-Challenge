@@ -61,7 +61,7 @@
 
   .search-filter-wrapper{
     display: flex;
-    padding: 2rem 0;
+    padding: 2rem .5rem;
     justify-content: space-between;
     align-items: center;
   }
