@@ -10,11 +10,6 @@ import { CountryDetails } from './components/CountryDetails/CountryDetails'
 import './index.css'
 
 
-// Create an axios instance
-const client = axios.create({
-  baseURL: "https://restcountries.com/v3.1/all?fields=name,population,region,subregion,capital,flags,cca3,continents,tld,currencies,languages,borders"
-});
-
 export const AppContext = createContext();
 let globalCountryData = [];
 
@@ -35,7 +30,7 @@ function App() {
   );
 
   useEffect(() => {
-    client.get()
+    axios.get("https://restcountries.com/v3.1/all?fields=name,population,region,subregion,capital,flags,cca3,continents,tld,currencies,languages,borders")
     .then((res) => {
       const sorted = res.data.sort((a, b) => b.population - a.population);
       globalCountryData = sorted
