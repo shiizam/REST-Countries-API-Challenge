@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3rem;
+  row-gap: 4rem;
   justify-items: center;
   align-items: center;
 }
@@ -15,7 +16,7 @@
   border-radius: 5px;
   background: var(--element-color);
   color: var(--text);
-  width: 275px;
+  width: 300px;
 }
 
 .card-header img{
@@ -50,10 +51,6 @@
 }
 
 @media screen and (min-width: 1200px){
-  .card{
-    width: 300px;
-  }
-
   .card:hover{
     cursor: pointer;
     transition: 100ms ease;
@@ -63,7 +60,6 @@
   .card-header img{
     display: block;
     width: 100%;
-    height: 180px;
     border-radius: 5px 5px 0 0;
     padding-bottom: 2rem;
   }
